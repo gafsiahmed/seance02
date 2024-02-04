@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,800;1,300&display=swap');
+
+    #bigTitle{
+        background-color: black ;
+        color: white;
+    }
+    /* .para{
+        background-color: rgb(201, 201, 201);
+        font-size: 30px;
+        padding: 70px;
+        border: 8px black solid;
+
+    } */
+
+    .longPara{
+        background-color: gray;
+        margin-left: 40px;
+    }
+
+    *{
+        font-size: 16px;
+    }
+
+
+
+    .boxModel{
+        border: solid black 3px;
+        background-color: rgb(202, 255, 202);
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 60px;
+       
+    }
+
+    .element2 {
+        border: solid black 3px;
+        background-color: rgb(250, 184, 229);
+        padding: 10px;
+        margin-top: 80px;
+        margin-right: 60px ;
+    }
+
+    .links {
+        background-color: red;
+        width: 250px;
+        height: 300px;
+        padding: 50px;
+        margin-left: 20px;
+        
+    }
+    a{
+        display: block  ;
+        margin-bottom: 30px;
+        text-decoration: none;
+        color: black;
+        background-color: #efefef;
+        width: 100px;
+        border: solid gray 1px;
+        border-radius: 3px;
+        text-align: center;
+        padding:  3px 0;
+        font-weight: 500;
+
+    }
+
+    a:hover{
+
+        background-color: #cecece;
+        transform: scale(1.1) ;
+    }
+    a:visited{
+        background-color: tomato;
+    }
+    
+
+    body{
+        background-color: rgb(255, 254, 192);
+        font-family: Montserrat;
+    }
+
+    .divFergha{
+        background-color: yellow;
+        height: 50px;
+        width: 150px;
+    }
+
+    .divFergha:empty{
+        background-color: red;
+    }
+
+    .input-field{
+        background-color: rgb(228, 254, 255);
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        border: solid black 3px;
+    }
+
+    .input-field:focus{
+        background-color: black;
+        color: white;
+    }
+
+    .input-field:disabled{
+        background-color: rgb(247, 39, 39);
+    }
+
+ .lorem::first-line{
+   background-color: palevioletred;
+ }
+
+ .lorem::first-letter{
+    font-size: 50px;
+    color: rgb(198, 255, 175);
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+  
+ }
+
+
+ .hello-world{
+    z-index: 1;
+ }
+ .hello-world::before{
+    content: "";
+    background-color: rgb(251, 234, 234);
+    height: 50px;
+    width: 50px;
+    position: absolute  ;
+    border: solid black 3px;
+    z-index: -1;
+ 
+
+ }
+
+
+
+
+ /* .element{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: solid black 3px;
+    margin: 10px;
+    position: absolute;
+ } */
+
+ /* .elem1{
+    background-color: rgb(255, 180, 180);
+    right: 800px;
+    top: 600px;
+    z-index: 51;
+ }
+ .elem2{
+    background-color: rgb(153, 153, 238);
+    right: 900px;
+    top: 500px;
+    z-index: 50;
+ }
+ .elem3{
+    background-color: rgb(170, 243, 170);
+    z-index: 53;
+ } */
+
+
+ .element {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border: solid black 2px;
+   
+    /* transition-duration: 4s;
+    transition-timing-function:ease-in-out; ;
+    transition-property:all;
+    transition-delay: 1s; */
+
+    animation-name: funnyBoy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 150px;
+    border: solid black 2px;
+    animation-timing-function: ease;
+    animation-play-state: running;
+   
+ 
+ }
+
+
+@keyframes funnyBoy {
+    0%{
+        background-color: red;
+        translate: 0 0 ;
+        rotate: 0deg;
+    }
+
+    25%{
+        background-color: blue;
+        translate : 300px 0;
+        rotate: 90deg;
+    }
+    
+    50%{
+        background-color: greenyellow;
+        translate : 300px 300px;
+        rotate: 180deg;
+
+    }
+    75%{
+        background-color: yellow;
+        translate : 0 300px;
+        rotate: 270deg;
+    }
+    100%{
+        background-color: red;
+        translate : 0 0;
+        rotate: 360deg;
+    }
+}
